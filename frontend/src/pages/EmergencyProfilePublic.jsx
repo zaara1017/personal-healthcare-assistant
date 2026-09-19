@@ -11,7 +11,7 @@ function EmergencyProfilePublic() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://192.168.29.64:5000/api/public/emergency/${userId}`)
+        const res = await axios.get(`https://personal-healthcare-assistant.onrender.com/api/public/emergency/${userId}`)
       } catch (err) {
         setError('Emergency profile not found')
       } finally {
