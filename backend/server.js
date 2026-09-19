@@ -13,8 +13,9 @@ const publicRoutes = require('./routes/publicRoutes')
 connectDB()
 
 const app = express()
-
-app.use(cors())
+app.use(cors({
+  origin: 'https://personal-healthcare-assistant-front.vercel.app',
+}))
 app.use(express.json())
 app.use("/api/ai", aiRoutes);
 app.use('/api/public', publicRoutes)
