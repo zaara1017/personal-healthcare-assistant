@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/ai";
+const API_URL = "https://personal-healthcare-assistant.onrender.com/api/ai";
 
 export const sendChatMessage = async (message, history) => {
   const token = localStorage.getItem("token");
